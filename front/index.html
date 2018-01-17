@@ -72,8 +72,14 @@
     .nodeList .item{
       height: 28px;
       line-height: 28px; 
-      padding-left: 15px;
+      padding-left: 0px;
       cursor: pointer;
+      min-width: 100%;
+      display: flex;
+      align-items: center; 
+    }
+    .nodeList .item i{
+      font-size: 18px;
     }
     .item:hover{
       background-color:rgba(42,45,46,1);
@@ -86,27 +92,17 @@
     <div class="nodeTool">
         <div class="nodeToolHeader">
           <div class="name">节点编辑器</div>
-          <div class="control">
-              <i class="material-icons">add</i>
-          </div>
+          <div class="control"> <i class="material-icons">add</i> </div>
         </div>
         <div class="nodeList">
             <div class="item">
-              
+                <i class="material-icons">chevron_right</i>
+                <div class="name">节点1</div>
             </div>
-            <div class="item" style="padding-left: 30px;">节点1</div>
-            
-            <div class="item" style="padding-left: 45px;">节点1</div>
-            <div class="item" style="padding-left: 45px;">节点2</div>
-            <div class="item" style="padding-left: 45px;">节点3</div>
-            <div class="item" style="padding-left: 45px;">节点4</div>
-
-            <div class="item" style="padding-left: 30px;">节点2</div>
-            <div class="item" style="padding-left: 30px;">节点3</div>
-            <div class="item" style="padding-left: 30px;">节点4</div>
-            <div class="item">节点2</div>
-            <div class="item">节点3</div>
-            <div class="item">节点4</div>
+            <div class="item">
+                <i class="material-icons">chevron_right</i>
+                <div class="name">节点2</div>
+            </div>
         </div>
     </div>
     <div class="screenTool">
